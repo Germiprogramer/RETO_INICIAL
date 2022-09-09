@@ -12,10 +12,9 @@ class Reina:
             tablero.append(fila)
         return tablero
 
-    #Metodo para el posicionamiento de las reinas
-    #De esta manera elaboraremos un algoritmo que nos de una solucion para n
+    #Metodo para establecer el movimiento de los caballos de ajedrez
     def mov_caballo(self):
-        #En esta funcion se define el posicionamiento como el movimiento de los caballos del ajedrez
+        #En esta funcion se define el movimiento de los caballos del ajedrez
 
 
 if __name__ == "__main__":
