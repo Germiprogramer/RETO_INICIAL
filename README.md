@@ -80,6 +80,68 @@ La idea sería crear una función que coloque cada una de las reinas en una posi
 
 Así, se añadirá una torre por fila, moviendo una de las superiores si no se puede añadir más, hasta que haya 8 torres.
 
+El código elaborado es el siguiente:
+
+
 ![Screenshot_20220909-204844_Gallery](https://user-images.githubusercontent.com/91720991/189425171-d64a6a7f-afe9-45a3-bf4f-7af591be30b1.jpg)
 
 La imagen superior es un ejemplo de como quedaría en un tablero 8x8, pero la función calcularía las posiciones teniendo como variable las dimensiones del tablero.
+
+
+class Reina:
+    def __init__(self, n):
+        self.n = n
+    
+    #Metodo que crea el tablero como una lista de listas
+    def tablero(self):
+        tablero = []
+        for i in range(self.n):
+            fila = []
+            for m in range(self.n):
+                fila.append(" ")
+            tablero.append(fila)
+        return tablero
+
+
+    #Metodo que comprueba que la solucion sea correcta
+    def comprobacion(self):
+        solucion = False
+        #Aqui iria el codigo que verifica que la solucion sea correcta
+        if solucion:
+            return True
+        else:
+            return False
+
+
+    #Metodo que nos devuelve el tablero con una solucion
+    def movimiento(self):
+        for i in range(self.n):
+            for j in range(self.n):
+                self.tablero()[i][j] == "X"
+                if self.comprobacion():
+                    break
+                else:
+                    pass          
+
+
+    #Metodo que nos devuelve la solucion de las reinas
+    def resultado(self):
+        self.movimiento()
+        resultado = []
+        for i in range(self.n):
+            for j in range(self.n):
+                if self.tablero()[i][j] == "X":
+                    #Añadimos el indice de la lista donde esta la reina en la solucion final
+                    resultado.append(self.tablero().index("X"))
+                else:
+                    pass
+        return resultado
+
+
+
+if __name__ == "__main__":
+
+    n = int(input("Introduzca la dimension (n) del tablero: "))
+    solucion = Reina(n)
+    print(solucion.resultado())
+
