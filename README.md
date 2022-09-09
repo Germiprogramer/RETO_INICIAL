@@ -3,6 +3,8 @@
 Colaboradores
 · Gonzalo Martínez, Rubén Nogueras, Germán Llorente, Carlos Puigserver, Alex Muñoz, Pelayo Huertas, Miguiel González
 
+El link al repositorio es el siguiente: https://github.com/Germiprogramer/RETO_INICIAL.git
+
 El trabajo se divide en dos partes principales, ambas relacionadas con el ajedrez: el cálculo de los movimientos de un caballo en un teclado de móvil y el problema de las n-torres.
 
 # El problema de las n-torres
