@@ -1,3 +1,4 @@
+#Creamos la clase tablero que creara el tbalero nxn
 class Tablero:
     def __init__(self, n):
         self.n = n
@@ -10,4 +11,6 @@ class Tablero:
         print (tablero)
     
 
-hola = Tablero(5)
+if __name__ == "__main__":
+    n = int(input("Introduzca un numero: "))
+    hola = Tablero(n)
