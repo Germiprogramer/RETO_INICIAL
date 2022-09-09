@@ -12,9 +12,27 @@ class Reina:
             tablero.append(fila)
         return tablero
 
-    #Metodo para establecer el movimiento de los caballos de ajedrez
-    def mov_caballo(self):
-        #En esta funcion se define el movimiento de los caballos del ajedrez
+
+    def comprobacion(self):
+
+
+
+    def movimiento(self):
+        for i in range(self.n):
+            for j in range(self.n):
+                self.tablero[i][j] == "X"
+                self.comprobacion()            
+
+    def resultado(self):
+        resultado = []
+        for i in range(self.n):
+            for j in range(self.n):
+                if self.tablero[i][j] == "X":
+                    resultado.append(self.tablero().index("X"))
+                else:
+                    pass
+        return resultado
+
 
 
 if __name__ == "__main__":
