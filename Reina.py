@@ -51,6 +51,6 @@ class Reina:
 
 if __name__ == "__main__":
 
-    n = int(input("Introduzca un numero: "))
+    n = int(input("Introduzca la dimension (n) del tablero: "))
     solucion = Reina(n)
     print(solucion.resultado())
